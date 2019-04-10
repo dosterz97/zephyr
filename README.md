@@ -17,6 +17,9 @@ Zephyr semester project
 
 ## Database Design
 
+### Television Time Restriction
+ERD - https://drive.google.com/file/d/1m5J6BBzVJmYVEjZuhqa1mVOAtMoAqAtq/view?usp=sharing
+
 ## Files
 
 ### User Interface Files
