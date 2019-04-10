@@ -1,14 +1,7 @@
-# zephyr
+# Sprint 1 Design Document
 Zephyr semester project
 
-
-## Use Cases
-
-### Adjust Lights
-
-### Front Door Camera
-
-### Television Time Restriction
+## Deployment Environment 
 
 ## Functional Requirements
 
@@ -17,3 +10,15 @@ Zephyr semester project
 ### Front Door Camera
 
 ### Television Time Restriction
+
+## Database Design
+
+## Files
+
+### User Interface Files
+
+### Model Files
+
+### Controller Files
+
+### Languages
