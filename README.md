@@ -72,6 +72,6 @@ ERD - https://drive.google.com/file/d/1chGReG3twRqIuH7UxfmMHUwRtvx66AjE/view?usp
 ### Languages
 
 1. Python
-* Python is the language used for this project. 
+* Python is the main language used for this project. Python is used to access the database server and controlling a hardware device.
 2. Skill gaps
 * Jon: no experience coding in Python
