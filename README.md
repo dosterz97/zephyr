@@ -6,6 +6,10 @@ Zephyr semester project
 ## Functional Requirements
 
 ### Adjust Lights
+1. The system should control attributes of the lights remotely via user input.
+2. The system must update to manual actions done by the user.
+3. The system should know what attributes of the lights can be changed.
+4. The system should restrict users from lights based off privilege.
 
 ### Front Door Camera
 1. The sensor must detect movement.
