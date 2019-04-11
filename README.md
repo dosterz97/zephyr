@@ -8,6 +8,11 @@ Zephyr semester project
 ### Adjust Lights
 
 ### Front Door Camera
+1. The sensor must detect movement.
+2. The camera must take a photo of visitor.
+3. The database must be updated to have accurate information of the system's status.
+4. The users are notified of an event.
+5. The users can check the status and view the photo taken by the camera.
 
 ### Television Time Restriction
 1. The Zephyr system should login users before use.
@@ -19,6 +24,9 @@ Zephyr semester project
 
 ### Television Time Restriction
 ERD - https://drive.google.com/file/d/1m5J6BBzVJmYVEjZuhqa1mVOAtMoAqAtq/view?usp=sharing
+
+### Front Door Camera
+ERD - https://drive.google.com/file/d/1D54ridRq3nqnebNRgT4SLS5RFa8G-JrE/view
 
 ## Files
 
