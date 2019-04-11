@@ -26,6 +26,9 @@ Zephyr semester project
 
 ## Database Design
 
+### Full System 
+ERD - https://drive.google.com/file/d/1E9FZYTcrmXXyHGFVdGMhGa6XWK0NyF9V/view?usp=sharing
+
 ### Television Time Restriction
 ERD - https://drive.google.com/file/d/1m5J6BBzVJmYVEjZuhqa1mVOAtMoAqAtq/view?usp=sharing
 
