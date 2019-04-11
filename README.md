@@ -75,3 +75,5 @@ ERD - https://drive.google.com/file/d/1chGReG3twRqIuH7UxfmMHUwRtvx66AjE/view?usp
 * Python is the main language used for this project. Python is used to access the database server and controlling a hardware device.
 2. Skill gaps
 * Jon: no experience coding in Python
+* Everyone: no experience connecting to devices with Bluetooth and hardware in general
+* Zach: experience with cmake files and in general larger scale low-level development
