@@ -48,6 +48,12 @@ ERD - https://drive.google.com/file/d/1chGReG3twRqIuH7UxfmMHUwRtvx66AjE/view?usp
 1. A container with the current status of the front door and a thumbnail of the outside view.
 2. A table holding previous records that include a timestamp of an event and the corresponding photo taken at the time.
 
+#### Television Time Restriction
+1. Login screen for admin (Similar sign up screen)
+2. A screen with all connected devices, and all devices trying to pair with the system. 
+3. After selecting a device, you can select accounts on the televisions to pull up the restriction page
+4. The restrictions page will have different fields that will allow the admin to create different types of rules
+
 ### Model Files
 
 #### Front Door Model
