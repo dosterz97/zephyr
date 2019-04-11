@@ -2,6 +2,7 @@
 Zephyr semester project
 
 ## Deployment Environment 
+The project is hosted on an EC2 server and can be accessed by the user on an internet connected device. A Raspberry PI controls the system and the hardware associated with it including motion sensors, lights, and a camera. 
 
 ## Functional Requirements
 
