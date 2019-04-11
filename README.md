@@ -17,6 +17,7 @@ Zephyr semester project
 3. The database must be updated to have accurate information of the system's status.
 4. The users are notified of an event.
 5. The users can check the status and view the photo taken by the camera.
+6. The user can view a live stream of outside their front door.
 
 ### Television Time Restriction
 1. The Zephyr system should login users before use.
@@ -42,8 +43,34 @@ ERD - https://drive.google.com/file/d/1chGReG3twRqIuH7UxfmMHUwRtvx66AjE/view?usp
 
 ### User Interface Files
 
+#### Front Door UI 
+1. A container with the current status of the front door and a thumbnail of the outside view.
+2. A table holding previous records that include a timestamp of an event and the corresponding photo taken at the time.
+
 ### Model Files
+
+#### Front Door Model
+1. Photo: A photo is taken and saved along the time it was taken.
+2. Status: The status of the front door is recorded and updated for every event.
 
 ### Controller Files
 
+#### Front Door Controller
+1. Sensor functions
+* movement_listen(): the system activates actively listens for movement, which triggers the next function.
+* activate_camera(): the system proceeds to activate the camera.
+
+2. Camera functions
+* sensor_listen(): the camera is only active if the sensor has been activated.
+* take_photo(): a photo is taken and saved into the database.
+* sleep(): the camera sleeps after a certain amount of time after there is no longer movement detected until awoken again.
+
+3. App functions
+* stream_surveillance(): opens a connection between the camera and app to allow the user to see outside the front door.
+
 ### Languages
+
+1. Python
+* Python is the language used for this project. 
+2. Skill gaps
+* Jon: no experience coding in Python
