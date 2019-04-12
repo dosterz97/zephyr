@@ -54,11 +54,21 @@ ERD - https://drive.google.com/file/d/1chGReG3twRqIuH7UxfmMHUwRtvx66AjE/view?usp
 3. After selecting a device, you can select accounts on the televisions to pull up the restriction page
 4. The restrictions page will have different fields that will allow the admin to create different types of rules
 
+#### Light Control UI
+1. Selection menu of the rooms with light connected to the system.
+2. When a light is selected options useable by the light will show up to edit.
+3. A confirmation window will pop up after the change is sent with either a sucess or error message.
+
 ### Model Files
 
 #### Front Door Model
 1. Photo: A photo is taken and saved along the time it was taken.
 2. Status: The status of the front door is recorded and updated for every event.
+
+#### Light Control Model
+1. Form layout with the information used to edit the light.
+2. current status information of the lights will be stored so the user can see what the current state is before changing.
+3. The privilege attached to the account will be checked with before editing the light so an unauthorized user can't change lights they aren't allowed to manipulate.
 
 ### Controller Files
 
@@ -74,6 +84,30 @@ ERD - https://drive.google.com/file/d/1chGReG3twRqIuH7UxfmMHUwRtvx66AjE/view?usp
 
 3. App functions
 * stream_surveillance(): opens a connection between the camera and app to allow the user to see outside the front door.
+
+#### Light Control Controller
+1. Edit Functions
+* editLight(): The system will apply the recieved for info from the user to the selected light.
+* changeColor(): Edits the RGB vaule of the light.
+* changeBrightness(): Edits the brightness of the light.
+* changeState(): Turns the light on/off.
+* editPrivilege(): Lets an Admin change the access to the light.
+
+2. Check Functions
+* checkLight(): Gets the current status of the light to update to the server.
+* checkColor(): Grabs the RGB vaule of the light.
+* checkBrightness(): Grabs the brightness of the light.
+* checkState(): Checks if the light is on/off.
+* checkPrivilege(): Will check who has access to changing the light.
+
+3. Update Functions
+* updateLight(): Will update the status of the light everytime it is changed (Both with app and manually).
+* listenLight(): Will check if the light is turned off manually.
+* serverConnect(): Will connect the update function to the server to send the values.
+
+4. Error Functions
+* failError(): Loads the error message if the edit fails.
+* success(): Loads the success message when the light changes successfully.
 
 ### Languages
 
