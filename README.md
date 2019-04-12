@@ -42,6 +42,10 @@ ERD - https://drive.google.com/file/d/1chGReG3twRqIuH7UxfmMHUwRtvx66AjE/view?usp
 
 ## Files
 
+### Stub Files
+#### Light Control
+https://github.com/dosterz97/zephyr/blob/master/builds/Lights.py
+
 ### User Interface Files
 
 #### Front Door UI 
