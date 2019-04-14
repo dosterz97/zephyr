@@ -145,3 +145,5 @@ https://github.com/dosterz97/zephyr/blob/master/builds/Lights.py
 * Jon: no experience coding in Python
 * Everyone: no experience connecting to devices with Bluetooth and hardware in general
 * Zach: experience with cmake files and in general larger scale low-level development
+3. Django 
+* Not a language, but we will use this to for DB and model template
