@@ -74,6 +74,12 @@ https://github.com/dosterz97/zephyr/blob/master/builds/Lights.py
 2. current status information of the lights will be stored so the user can see what the current state is before changing.
 3. The privilege attached to the account will be checked with before editing the light so an unauthorized user can't change lights they aren't allowed to manipulate.
 
+#### Television Time Restriction
+1. Account - Used to keep track of different users and privilege
+2. Restriction - Tied weakly to the Accounts they are applied to
+3. Television - Tv name and id that are connected to the Zephyr system, so that different restrictions can be put on different devices
+4. Show - This model is used by the restrictions for content monitoring (I.e R rated movies not allowed for 12 year olds)
+
 ### Controller Files
 
 #### Front Door Controller
