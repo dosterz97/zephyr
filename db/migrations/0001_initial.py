@@ -138,6 +138,15 @@ operations = [
             PRIMARY KEY (`showName`)
         );
 
+        -- --------------------------------------------------------
+
+        --
+        -- Dummy Data
+        --
+
+        INSERT INTO `account` (
+        )
+
       """,
         reverse_sql="""
         DROP TABLE `account`;
