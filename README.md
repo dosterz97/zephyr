@@ -43,8 +43,6 @@ ERD - https://drive.google.com/file/d/1m5J6BBzVJmYVEjZuhqa1mVOAtMoAqAtq/view?usp
 ## Files
 
 ### Stub Files
-#### Light Control
-https://github.com/dosterz97/zephyr/blob/master/builds/Lights.py
 
 ### User Interface Files
 
