@@ -149,6 +149,6 @@ ERD - https://drive.google.com/file/d/1m5J6BBzVJmYVEjZuhqa1mVOAtMoAqAtq/view?usp
 
 # Sprint 2
 
-##Light Configuration
+## Light Configuration
 
 For our light configuration we are going to be using _blank_. This model will allow us to use *flask* on a *raspberry pi* to communicate with the light. We will still be able to use our python stubed out from our old plan for most of the use case. But after that, setups for testing will be minimal as we will have the connection hosted through a server so the users only have to visit the website.
