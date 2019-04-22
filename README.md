@@ -149,6 +149,97 @@ ERD - https://drive.google.com/file/d/1m5J6BBzVJmYVEjZuhqa1mVOAtMoAqAtq/view?usp
 
 # Sprint 2
 
+## Sprint 1 Issues
+
+Many ideas were created during Spring 1 of this project. Our group developed three use cases for the Home Automation Zephyr Project: TV Time Restriction, Front Door Monitoring, and Lights Adjustment.  Our first "pass" from the previous sprint involved a Django server to host the databases required but the scope proved to be too big as we are limited by the time remaining to implement all of our use cases given we do not have experience with hardware and coding in Python. We ultimately decided to implement the Lights Adjustment use case for this Sprint.
+
+The next objective therefore is to create a simple application that changes the confirguration of a light, accessible from any browser. Our options included emulating the system in a web application by using the *states* a light can take and displaying the output of what the room might look like. The other is to use a Raspberry PI and relay switch to control a light remotely.
+
 ## Light Configuration
 
 For our light configuration we are going to be using _blank_. This model will allow us to use *flask* on a *raspberry pi* to communicate with the light. We will still be able to use our python stubed out from our old plan for most of the use case. But after that, setups for testing will be minimal as we will have the connection hosted through a server so the users only have to visit the website.
+
+### Hardware Components
+
+To achieve our goal, a relay is used to connect the Raspberry PI and the light. It acts as a switch and could be toggled simply by running the commands:
+
+```python
+#on
+GPIO.output (relay_pin, GPIO.LOW)
+#off
+GPIO.output (relay_pin, GPIO.HIGH)
+```
+
+* Raspberry Pi
+* Relay
+* Lights
+
+### Necessary libraries
+
+The GPIO channels must set up and used by the relays
+
+```
+sudo apt-get install python-rpi.gpio
+```
+
+### Virtual environment
+
+Everything is created in a Python virtual environment to keep everything separated
+
+```sh
+sudo apt-get install python-virtualenv
+mkdir lightsApp
+cd lightsApp
+
+#activate the virtual environment
+virtualenv lightsEnv
+lightsEnv/bin/activate
+
+#install required library on virtual environment
+pip install flask uwsgi rpi.gpio
+```
+
+### Functionality
+
+This code sets up the relay connections and listens for commands. 
+
+```python
+#WIP - need to work on code for turning on lights
+
+from flask import Flask, render_template
+import RPi.GPIO as GPIO
+ 
+app = Flask(__name__)
+ 
+#pin connected to relay
+#pin state
+
+#GPIO set up
+ 
+#default route, without anything
+# set routes for actions: on and off
+	
+# return to the template with new info
+```
+
+### Front-end
+
+Flask handles the front-end of the application. Currently working on code
+
+
+```
+mkdir templates
+cd templates
+```
+lightsApp.html
+```html
+#WIP - work on html
+#button to turn on
+#button to turn off
+#etc
+```
+
+```css
+//WIP - work on css code to make it pretty
+//maybe jquery
+```
