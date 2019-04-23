@@ -1,0 +1,1 @@
+The application is accessible on any browser. Upon landing, a user interface displays the rooms of their house. They can click on any section of the house change the status of lighting. The interface updates to indicate whether a light has been turned on or off.
