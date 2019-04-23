@@ -149,6 +149,10 @@ ERD - https://drive.google.com/file/d/1m5J6BBzVJmYVEjZuhqa1mVOAtMoAqAtq/view?usp
 
 # Sprint 2
 
+## Sprint 1 Summary of Progress
+
+To summarize what is below and the current status of our project: we have pivoted to change the size of scope of our project from multiple use cases using the zephry system, to focusing on one specific use case, the light use case. We already ordered hardware and have hooked up the wiring from the light and the relay. However the current relay doesn't have enough power to switch off the light because the batteries only output 3.3v and not the 5v needed to affect the ciruit. The new relay should be in soon and should unblock us and allow us to continue to test the components. Once we have tested the components, (idealy this thrusday) we will be able to start writing the relay code needed to interface with the light. Once we get the basic use case working then we can futher develop the feature by implement colors, patterns, and brightness.
+
 ## Sprint 1 Issues
 
 Many ideas were created during Spring 1 of this project. Our group developed three use cases for the Home Automation Zephyr Project: TV Time Restriction, Front Door Monitoring, and Lights Adjustment.  Our first "pass" from the previous sprint involved a Django server to host the databases required but the scope proved to be too big as we are limited by the time remaining to implement all of our use cases given we do not have experience with hardware and coding in Python. We ultimately decided to implement the Lights Adjustment use case for this Sprint.
