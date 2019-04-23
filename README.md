@@ -173,14 +173,19 @@ GPIO.output (relay_pin, GPIO.LOW)
 #off
 GPIO.output (relay_pin, GPIO.HIGH)
 ```
+#### Hardware Challenges
+
+We did run into one roadblock with the hardware we chose. The relay connected to our raspberry pi needs 5 volts to trigger the switch , but the GPIO pins output a max of 3.3 volts. We have ordered a different type of relay that has a lower range of activation to fix this issue. There are other ways to bypass this like making a small amplifying circuit with transistors to boost the voltage and current to the needed levels to activate the relay. 
 
 ### Necessary Libraries
 
-The GPIO channels must set up and used by the relays
+The GPIO channels library is installed with the following command
 
 ```
 sudo apt-get install python-rpi.gpio
 ```
+
+This will allow us to manipulate the GPIO channels on the board, the channel is used to trigger the relay allowing the current to flow to the light.
 
 ### Virtual Environment
 
