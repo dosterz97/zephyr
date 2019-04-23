@@ -161,6 +161,10 @@ For our light configuration we are going to be using _blank_. This model will al
 
 ### Hardware Components
 
+* Raspberry Pi
+* Relay
+* Lights
+
 To achieve our goal, a relay is used to connect the Raspberry PI and the light. It acts as a switch and could be toggled simply by running the commands:
 
 ```python
@@ -170,11 +174,7 @@ GPIO.output (relay_pin, GPIO.LOW)
 GPIO.output (relay_pin, GPIO.HIGH)
 ```
 
-* Raspberry Pi
-* Relay
-* Lights
-
-### Necessary libraries
+### Necessary Libraries
 
 The GPIO channels must set up and used by the relays
 
@@ -182,7 +182,7 @@ The GPIO channels must set up and used by the relays
 sudo apt-get install python-rpi.gpio
 ```
 
-### Virtual environment
+### Virtual Environment
 
 Everything is created in a Python virtual environment to keep everything separated
 
@@ -195,7 +195,7 @@ cd lightsApp
 virtualenv lightsEnv
 lightsEnv/bin/activate
 
-#install required library on virtual environment
+#install required library (Flask web framework) on virtual environment
 pip install flask uwsgi rpi.gpio
 ```
 
@@ -224,22 +224,56 @@ app = Flask(__name__)
 
 ### Front-end
 
-Flask handles the front-end of the application. Currently working on code
+Flask provides the framework for the web application and Nginx is the web server used to host it.
 
+## lightsApp.html
 
-```
-mkdir templates
-cd templates
-```
-lightsApp.html
+This is the main index file containing the elements of the web application. It is currently a button that changes dynamically based on the current setting.
+
 ```html
-#WIP - work on html
-#button to turn on
-#button to turn off
-#etc
+#WIP - working on html. 
+
+<html>
+<body>
+	{% extends "header.html" %}
+	<!-- header.html includes head and stylesheet references. Needs to be worked on -->
+	{% block content %}
+        <script type="text/javascript">
+                $(function() {
+                        $('#on').click(function() {
+                                $('#slider').attr("src","static/images/on.png");
+                        
+                        });
+                        $('#off').click(function() {
+                                $('#slider').attr("src","static/images/off.png");
+                        });
+                });
+        </script>
+        <div class="container"> 
+                <div class="row">
+                        <div class="two-thirds columns">
+                                <h1>Lights Adjustment</h1>
+       				<!-- check pin state -->
+       				{% if pin == 1 %}
+				<!-- If lights are off-->
+                		<input type="button" onclick="window.location='/on';" value="Turn on"/>
+				{% else %}
+                		<!-- If lights are on-->
+                		<input type="button" onclick="window.location='/off';" value="Turn off"/>
+        			{% endif %}
+                        </div>
+                </div>
+        </div>
+	{% endblock %}
+        
+</body>
+</html>
 ```
 
-```css
-//WIP - work on css code to make it pretty
-//maybe jquery
-```
+## User Interface Design
+
+Web app sketch: https://github.com/dosterz97/zephyr/blob/master/views/ui_sketch.png
+
+The UI will consist of two sections as shown. The left side of page contains a list of tiles of all the floors of the home. Selecting a tile highlights it and updates the right side, which displays a view of the whole floor from above. Each room is colored based on the state of the light being controlled in the room. Selecting a room will prompt the user to toggle the settings of the light they selected and the page updates as soon as it handles the request.
+
+
