@@ -285,4 +285,8 @@ Web app sketch: https://github.com/dosterz97/zephyr/blob/master/views/ui_sketch.
 
 The UI will consist of two sections as shown. The left side of page contains a list of tiles of all the floors of the home. Selecting a tile highlights it and updates the right side, which displays a view of the whole floor from above. Each room is colored based on the state of the light being controlled in the room. Selecting a room will prompt the user to toggle the settings of the light they selected and the page updates as soon as it handles the request.
 
+# Sprint 3
 
+## Persona of an average user
+
+The lights use case in general, is a very impersonal experience. But given that such a wide variety of users exist, it is important to recognize that we must make our product the most widely available and useable to the most amount of people. Unless people prefer to go around lighting their own candles one by one, they would prefer to use our product which would allow them to turn off lights without having to walk around their entire home. But more specifically, tech guru's who like to control many of the aspects of their home from their mobile device, can add and remove lights remotely, and as the technology we are building expands into more features, things like room aestetic, light patterns, and A.I. can help inhance the product giving it more use than just an on/off switch connected through your phone. As the use case exists in it's most simple form, the technology is the equivelant of a digital light switch, which for all purposes can be used by a basic user to control their lights.
