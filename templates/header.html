@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
-        <head>
-                <title>Light Up</title>
-                <meta name="description" content="">
-                <meta name="author" content="">
-
-                <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-
-                <link rel="stylesheet" href="static/css/normalize.css">
-                <link rel="stylesheet" href="static/css/skeleton.css">
+	<head>
+		<meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Light Switch</title>
+                <link rel="stylesheet" href="static/css/bulma.min.css" />
                 <link rel="icon" type="image/png" href="static/images/favicon.png">
-		<script src="static/js/jquery-3.3.1.min.js"></script>
-		<script>
+                <script src="static/js/jquery-3.3.1.min.js"></script>
+                <script>
 			var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
-		</script>
+                </script>
         </head>
         <body>
+        <section class="hero is-fullheight">
+            <div class="hero-head">
+                <nav class="navbar">
+                    <div class="container">
+
+                        <div id="navbarMenuHeroA" class="navbar-menu">
+                            <div class="navbar-end">
+				<!-- we still need a homepage, change url when done -->
+				<a href="" class="navbar-item">
+                                Home
+                                </a>
+                                <a href="" class="navbar-item">
+                                Light Switch
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
                 {% block content %}
                 {% endblock %}
-        </body>
+            </div>
+        </div>	
+    </section>
+</body>
 </html>
 
