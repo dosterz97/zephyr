@@ -13,15 +13,18 @@
 	</script>
 	<div class="container">	
 		<div class="row">
-			<div class="two-thirds columns">
-				<h2>Lights on RPi</h2>
+			<div>
+				<h1 class="title">Light Switch</h1>
+				<br></br>
 				<!-- check pin state -->
 				{% if pin == 1 %}
 					<img src="static/images/lampoff.png" id="light"></p>
-					<input type="button" onclick="window.location='/on';" value="Turn on"/ id="lighton">
+					<br></br>
+					<input class="button is-info is-large" type="button" onclick="window.location='/on';" value="Turn on"/ id="lighton">
 				{% else %}
 					<img src="static/images/lampon.png" id="light"></p>
-					<input type="button" onclick="window.location='/off';" value="Turn off"/ id="lightoff">
+					<br></br>
+					<input class="button is-center is-info is-large" type="button" onclick="window.location='/off';" value="Turn off"/ id="lightoff">
 				{% endif %}
 			</div>
 		</div>
