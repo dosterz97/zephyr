@@ -306,3 +306,9 @@ The main technical challenge will be connecting an ec2 instance over a network t
 # Sprint 4
 
 Youtube Demo: https://www.youtube.com/watch?v=1YRh6HXmCNM&feature=youtu.be
+
+## Bugs Found when testing
+
+Some of the issues we had with the system we were building consisted of a few technical challenges. One was the initial setting of the lightbulb on the relay was not in sync of the status of the website. Sometimes the lightbulb would be shown as "on" when the light was actually off. This was a challenge because retrieving information from the relay isn't as easy as sending the initial signal. 
+
+Another issue was that the if we wanted to use AWS IoT things to have more complex features... Like remembering whether the light was on or not, the raspberry pi was also required to download the software so the persisting "shadow devices" could exist and their state would be changed even if the light wasn't connected.
