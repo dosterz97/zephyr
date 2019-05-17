@@ -308,7 +308,7 @@ The main technical challenge will be connecting an ec2 instance over a network t
 Youtube Demo: https://www.youtube.com/watch?v=1YRh6HXmCNM&feature=youtu.be
 
 ## Bugs Found when testing
+ 
+Our main issue was that the if we wanted to use AWS IoT things to have more complex features... Like remembering whether the light was on or not, the raspberry pi was also required to download the software so the persisting "shadow devices" could exist and their state would be changed even if the light wasn't connected.
 
-Some of the issues we had with the system we were building consisted of a few technical challenges. One was the initial setting of the lightbulb on the relay was not in sync of the status of the website. Sometimes the lightbulb would be shown as "on" when the light was actually off. This was a challenge because retrieving information from the relay isn't as easy as sending the initial signal. 
-
-Another issue was that the if we wanted to use AWS IoT things to have more complex features... Like remembering whether the light was on or not, the raspberry pi was also required to download the software so the persisting "shadow devices" could exist and their state would be changed even if the light wasn't connected.
+The connection type is a major problem with the current setup we have. When using some large pulic networks the IP adress of the pi can get very complicated making it very difficult to connect to the page hosted by the pi. When we were trying to test the setup outside of a small network we had to use a hotspot to get connection to the pi and the IP that was given to the pi was so complex that is was more difficult than it was worth to connect to the pi.
