@@ -302,3 +302,7 @@ Also on May 2nd Dylan and Zach got together in the Linux lab and started working
 We have finalized on what our goal for the final product is. As taken under advisement by Proffesor Groggins, authentication won't be a priority in the final product. Instead we will be focusing on getting a flask application hosted on an ec2 instance that anyone can access to change the status of the light bulb. This is one scentence is our final minimum viable product for the project. But as this should be more than accomplishable in our current time frame, our goal is to add either rgb capabilites and/or brightness capabilites. Other extenstions as time-based automatic command fired by the instance were also take under consideration (I.e. turning the light on at 8am!) but as time constraints exist, not everything can make the cut in the short timeframe. 
 
 The main technical challenge will be connecting an ec2 instance over a network to a rasberrypi, as local development is already working seamlessly at the moment. Our goal for the end user is to be able to access the site without having to run ANY commands to boot up the instance and all they need to do to test/use the light is to flip the switch. So in this frame we can handle the installation and booting up of the system so there is no need for extensive user education on how to use or setup the experience.
+
+# Sprint 4
+
+Youtube Demo: https://www.youtube.com/watch?v=1YRh6HXmCNM&feature=youtu.be
