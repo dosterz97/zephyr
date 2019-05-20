@@ -312,3 +312,5 @@ Youtube Demo: https://www.youtube.com/watch?v=1YRh6HXmCNM&feature=youtu.be
 Our main issue was that the if we wanted to use AWS IoT things to have more complex features... Like remembering whether the light was on or not, the raspberry pi was also required to download the software so the persisting "shadow devices" could exist and their state would be changed even if the light wasn't connected.
 
 The connection type is a major problem with the current setup we have. When using some large pulic networks the IP adress of the pi can get very complicated making it very difficult to connect to the page hosted by the pi. When we were trying to test the setup outside of a small network we had to use a hotspot to get connection to the pi and the IP that was given to the pi was so complex that is was more difficult than it was worth to connect to the pi.
+
+Readme V2: https://github.com/dosterz97/zephyr/blob/master/READMEv2.md
